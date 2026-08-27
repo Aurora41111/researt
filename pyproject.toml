@@ -1,0 +1,28 @@
+[project]
+name = "muav-isac"
+version = "0.1.0"
+description = "Reproduction of Multi-UAV-Assisted ISAC joint beamforming and trajectory optimization"
+readme = "README.md"
+authors = [
+    { name = "Dankao Chen", email = "dankaochen2002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "cvxpy>=1.9.2",
+    "gymnasium>=1.3.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "scipy>=1.18.0",
+    "torch>=2.13.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.23,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pypdf>=6.15.0",
+    "pytest>=9.1.1",
+    "ruff>=0.16.2",
+]
